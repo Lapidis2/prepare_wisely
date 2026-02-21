@@ -29,7 +29,7 @@ export default function LandingPage() {
     if (!resume || !githubUsername) return
 
     setIsAnalyzing(true)
-    // Simulate analysis time
+    
     setTimeout(() => {
       router.push(`/dashboard?github=${githubUsername}&role=${targetRole}`)
     }, 3000)
@@ -37,7 +37,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      {/* Header */}
+  
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-2">
